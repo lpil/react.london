@@ -128,7 +128,7 @@
   }
 
 
-// CONTENT SPECIFIC
+// HERO
   #hero {
     background: url("../img/SVG/ReactLondon_SaveTheDate_Web_background-01.svg")
       no-repeat
@@ -198,6 +198,7 @@
     }
   }
 
+// BANNER
   #banner {
     background: $red;
     height: 50px;
@@ -211,6 +212,7 @@
     }
   }
 
+// ABOUT
   #about {
     margin: 20px 0px 70px 0px;
     h2, p {
@@ -237,6 +239,7 @@
     }
   }
 
+// REGISTER
   #register {
     border-top: 3px solid $grey;
     padding: 20px 0 56px 0;
@@ -246,6 +249,7 @@
     }
   }
 
+// FOOTER
   footer {
     background: $grey;
     height: 105px;
