@@ -205,6 +205,10 @@
     color: white;
     font-size: 14px;
     font-weight: 700;
+    img, object {
+      height: 55px;
+      margin-top: -20px;
+    }
   }
 
   #about {
