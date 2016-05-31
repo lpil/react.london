@@ -74,6 +74,7 @@
       line-height: 36px;
       width: auto;
       height: auto;
+      margin: 20px;
       &:hover {
         color: white;
       }
@@ -84,13 +85,6 @@
     #mc_embed_signup form#mc-embedded-subscribe-form {
       padding: 50px 60px 0px 60px;
     }
-  }
-  
-  @media (max-width: $desktop-width) {
-    #mc_embed_signup input[type="submit"].button {
-      margin: 20px;
-    }
-
   }
 
   @media (max-width: $mobile-width) {
@@ -262,5 +256,16 @@
           }
         }
       }
+    }
+    a.footer-logo {
+      display: inline-block;
+      height: 85px;
+      img {
+        height: 100%;
+      }
+    }
+    object {
+      height: 85px;
+      pointer-events: none;
     }
   }
