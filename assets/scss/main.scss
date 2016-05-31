@@ -1,19 +1,123 @@
+// COLORS
 $red: #D2091E;
 $blue: #C6DDE7;
 $grey: #4A4A4A;
+$white: #fefefe;
 
-#mc_embed_signup{
-  background: #fff;
-  clear: left;
-  font: 14px Helvetica, Arial, sans-serif;
-}
+// FONTS
+  @font-face {
+    font-family: 'Objektiv';
+    src: url('../fonts/ObjektivMk1_Trial_Lt.ttf')  format('truetype');
+  }
 
-body, html {
-  width: 100%;
-  margin: 0px
-}
+  @font-face {
+    font-family: 'Objektiv';
+    src: url('../fonts/ObjektivMk1_Trial_Bd.ttf')  format('truetype');
+    font-weight: bold;
+  }
 
-.block {
-  width: 100%;
-  background: red;
-}
+  #mc_embed_signup{
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    form#mc-embedded-subscribe-form {
+      padding: 50px 60px 0px 60px;
+    }
+    #mc_embed_signup_input {
+      position: absolute;
+      left: -5000px;
+    }
+    #mce-EMAIL {
+      border: 3px solid $grey;
+      background: $white;
+    }
+    input[type="submit"].button {
+      background: $grey;
+      color: $blue;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 0px 45px;
+      line-height: 36px;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  body {
+    background: $blue;
+    color: $grey;
+    font-family: 'Objektiv';
+  }
+
+// BULDING BLOCKS
+  #wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1;
+  }
+
+  .block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .content {
+      width: 980px;
+      padding: 0px 20px;
+    }
+  }
+
+  .content.space-between {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+// CONTENT SPECIFIC
+  #banner {
+    background: $red;
+    height: 50px;
+
+    color: $white;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  #about {
+    margin: 20px 0px 70px 0px;
+    h2 {
+      margin: 0px;
+      margin-bottom: 10px;
+      font-size: 30px;
+    }
+    p {
+      font-size: 30px;
+      line-height: 42px;
+      margin: 0px;
+    }
+  }
+
+  #register {
+    border-top: 3px solid $grey;
+    padding: 20px 0 56px 0;
+    h3 {
+      font-size: 21px;
+      margin: 0px;
+    }
+  }
+
+  footer {
+    background: $grey;
+    height: 105px;
+    ul {
+      color: $blue;
+      margin: 0px;
+      padding: 0px;
+      li {
+        list-style-type: none;
+      }
+    }
+  }
