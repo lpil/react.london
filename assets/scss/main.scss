@@ -2,7 +2,6 @@
 $red: #D2091E;
 $blue: #C6DDE7;
 $grey: #4A4A4A;
-$white: #fefefe;
 
 // FONTS
   @font-face {
@@ -29,7 +28,7 @@ $white: #fefefe;
     }
     #mce-EMAIL {
       border: 3px solid $grey;
-      background: $white;
+      background: white;
     }
     input[type="submit"].button {
       background: $grey;
@@ -40,6 +39,9 @@ $white: #fefefe;
       line-height: 36px;
       width: auto;
       height: auto;
+      &:hover {
+        color: white;
+      }
     }
   }
 
@@ -92,7 +94,7 @@ $white: #fefefe;
     background: $red;
     height: 50px;
 
-    color: $white;
+    color: white;
     font-size: 14px;
     font-weight: 700;
   }
@@ -131,6 +133,9 @@ $white: #fefefe;
         a {
           color: $blue;
           text-decoration: none;
+          &:hover {
+            color: white;
+          }
         }
       }
     }
