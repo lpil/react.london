@@ -3,7 +3,7 @@
   $blue: #C6DDE7;
   $grey: #4A4A4A;
 
-  $desktop-width: 992px;
+  $desktop-width: 1200px;
   $mobile-width: 435px;
 
   .reset-spacing {
@@ -80,13 +80,13 @@
     }
   }
 
-  @media (min-device-width: $mobile-width) {
+  @media (min-width: $mobile-width) {
     #mc_embed_signup form#mc-embedded-subscribe-form {
       padding: 50px 60px 0px 60px;
     }
   }
 
-  @media (max-device-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     #mc_embed_signup {
       form#mc-embedded-subscribe-form {
         padding: 0px;
@@ -129,12 +129,61 @@
 
 // CONTENT SPECIFIC
   #hero {
-    height: 330px;
+    background: url("../img/SVG/ReactLondon_SaveTheDate_Web_background-01.svg")
+      no-repeat
+      center center;
+    background-size: cover;
+    min-height: 330px;
+    .content {
+      text-align: center;
+      margin-top: 145px;
+
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+    }
+    .block-bg {
+      background: $blue;
+      display: inline-block;
+      margin: 0px;
+    
+    }
+    p.block-bg {
+      margin-top: 45px;
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 40px;
+      font-weight: 200;
+    }
   }
 
-  @media (min-device-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     #hero {
-      height: 660px;
+      min-height: 660px;
+      background: url("../img/SVG/ReactLondon_SaveTheDate_Web_background-02.svg")
+        no-repeat
+        center center;
+      background-size: cover;
+      .content {
+        margin-top: 310px;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    #hero {
+      background: url("../img/SVG/ReactLondon_SaveTheDate_Web_background-03.svg")
+        no-repeat
+        center center;
+      background-size: cover;
+      margin-bottom: 20px;
+      .content {
+        margin-top: 380px;
+      }
     }
   }
 
@@ -162,7 +211,7 @@
     }
   }
 
-  @media (max-device-width: $mobile-width) {
+  @media (max-width: $mobile-width) {
     #about {
       h2, p {
         font-size: 24px;
@@ -186,8 +235,7 @@
     background: $grey;
     height: 105px;
     ul {
-      margin: 0px;
-      padding: 0px;
+      @extend .reset-spacing;
       li {
         list-style-type: none;
         a {
