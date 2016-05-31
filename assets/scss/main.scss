@@ -68,6 +68,10 @@ $grey: #4A4A4A;
     font-family: 'Objektiv', Arial;
   }
 
+  a {
+    text-decoration: none;
+  }
+
 // BULDING BLOCKS
   #wrapper {
     display: flex;
@@ -149,7 +153,6 @@ $grey: #4A4A4A;
         list-style-type: none;
         a {
           color: $blue;
-          text-decoration: none;
           &:hover {
             color: white;
           }
