@@ -151,7 +151,7 @@
       padding: 3px;
     }
     p.block-bg {
-      margin-top: 20px;
+      // margin-top: 20px;
       font-weight: 700;
       font-size: 14px;
     }
@@ -161,6 +161,9 @@
     h2.block-bg {
       font-size: 40px;
       font-weight: 200;
+    }
+    a {
+      color: $grey;
     }
   }
 
