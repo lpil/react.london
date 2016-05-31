@@ -1,7 +1,15 @@
-// COLORS
-$red: #D2091E;
-$blue: #C6DDE7;
-$grey: #4A4A4A;
+// Utilities
+  $red: #D2091E;
+  $blue: #C6DDE7;
+  $grey: #4A4A4A;
+
+  $desktop-width: 992px;
+  $mobile-width: 435px;
+
+  .reset-spacing {
+    margin: 0px;
+    padding: 0px;
+  }
 
 // FONTS
   @font-face{
@@ -22,12 +30,21 @@ $grey: #4A4A4A;
     font-weight: bold;
   }
 
+// GENERAL
+  body {
+    background: $blue;
+    color: $grey;
+    font-family: 'Objektiv', Arial;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+// MAILCHIMP
   #mc_embed_signup{
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
-    form#mc-embedded-subscribe-form {
-      padding: 50px 60px 0px 60px;
-    }
 
     #mc_embed_signup_scroll {
       display: flex;
@@ -47,6 +64,7 @@ $grey: #4A4A4A;
       min-height: 36px;
       padding: 0 9px;
     }
+
     input[type="submit"].button {
       background: $grey;
       color: $blue;
@@ -62,14 +80,22 @@ $grey: #4A4A4A;
     }
   }
 
-  body {
-    background: $blue;
-    color: $grey;
-    font-family: 'Objektiv', Arial;
+  @media (min-device-width: $mobile-width) {
+    #mc_embed_signup form#mc-embedded-subscribe-form {
+      padding: 50px 60px 0px 60px;
+    }
   }
 
-  a {
-    text-decoration: none;
+  @media (max-device-width: $mobile-width) {
+    #mc_embed_signup {
+      form#mc-embedded-subscribe-form {
+        padding: 0px;
+        padding-top: 50px;
+      }
+      #mce-EMAIL {
+        width: calc(100vw - 80px); 
+      }
+    }
   }
 
 // BULDING BLOCKS
@@ -100,15 +126,16 @@ $grey: #4A4A4A;
     justify-content: space-between;
   }
 
-// Utilities
-  .reset-spacing {
-    margin: 0px;
-    padding: 0px;
-  }
 
 // CONTENT SPECIFIC
   #hero {
     height: 330px;
+  }
+
+  @media (min-device-width: $desktop-width) {
+    #hero {
+      height: 660px;
+    }
   }
 
   #banner {
@@ -122,15 +149,27 @@ $grey: #4A4A4A;
 
   #about {
     margin: 20px 0px 70px 0px;
+    h2, p {
+      font-size: 30px;
+    }
     h2 {
       @extend .reset-spacing;
       margin-bottom: 10px;
-      font-size: 30px;
     }
     p {
-      font-size: 30px;
       line-height: 42px;
       @extend .reset-spacing;
+    }
+  }
+
+  @media (max-device-width: $mobile-width) {
+    #about {
+      h2, p {
+        font-size: 24px;
+      }
+      p {
+        line-height: 32px;
+      }
     }
   }
 
