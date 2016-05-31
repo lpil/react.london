@@ -85,6 +85,13 @@
       padding: 50px 60px 0px 60px;
     }
   }
+  
+  @media (max-width: $desktop-width) {
+    #mc_embed_signup input[type="submit"].button {
+      margin: 20px;
+    }
+
+  }
 
   @media (max-width: $mobile-width) {
     #mc_embed_signup {
@@ -146,16 +153,17 @@
       background: $blue;
       display: inline-block;
       margin: 0px;
-    
+      padding: 3px;
     }
     p.block-bg {
-      margin-top: 45px;
+      margin-top: 20px;
       font-weight: 700;
+      font-size: 14px;
     }
-    h1 {
+    h1.block-bg {
       font-size: 30px;
     }
-    h2 {
+    h2.block-bg {
       font-size: 40px;
       font-weight: 200;
     }
@@ -170,6 +178,15 @@
       background-size: cover;
       .content {
         margin-top: 310px;
+      }
+      p.block-bg {
+        font-size: 21px;
+      }
+      h1.block-bg {
+        font-size: 45px;
+      }
+      h2.block-bg {
+        font-size: 60px;
       }
     }
   }
