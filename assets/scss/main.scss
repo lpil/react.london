@@ -5,6 +5,7 @@
 
   $desktop-width: 1200px;
   $mobile-width: 435px;
+  $tiny-mobile-width: 320px;
 
   .reset-spacing {
     margin: 0px;
@@ -189,11 +190,24 @@
     #hero {
       background: url("../img/SVG/ReactLondon_SaveTheDate_Web_background-03.svg")
         no-repeat
-        center center;
+        center top;
       background-size: cover;
       margin-bottom: 20px;
       .content {
-        margin-top: 380px;
+        margin-top: 330px;
+      }
+    }
+  }
+
+  @media (max-width: $tiny-mobile-width) {
+    #hero {
+      background: url("../img/SVG/ReactLondon_SaveTheDate_Web_background-03.svg")
+        no-repeat
+        center top;
+      background-size: cover;
+      margin-bottom: 20px;
+      .content {
+        margin-top: 260px;
       }
     }
   }
