@@ -6,3 +6,5 @@ dist
 reactlondon
 *config.json
 .env
+.sass-cache
+assets/css/*
