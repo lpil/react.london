@@ -21,14 +21,24 @@ $grey: #4A4A4A;
     form#mc-embedded-subscribe-form {
       padding: 50px 60px 0px 60px;
     }
+
+    #mc_embed_signup_scroll {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+    }
     #mc_embed_signup_input {
       position: absolute;
       left: -5000px;
       cursor: pointer;
     }
     #mce-EMAIL {
+      margin: 0px;
+      margin-bottom: 10px;
       border: 3px solid $grey;
       background: white;
+      min-height: 36px;
+      padding: 0 9px;
     }
     input[type="submit"].button {
       background: $grey;
