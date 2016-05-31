@@ -7,4 +7,4 @@ reactlondon
 *config.json
 .env
 .sass-cache
-assets/css/*
+assets/css/*.css*

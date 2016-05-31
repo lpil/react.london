@@ -7,3 +7,13 @@ $grey: #4A4A4A;
   clear: left;
   font: 14px Helvetica, Arial, sans-serif;
 }
+
+body, html {
+  width: 100%;
+  margin: 0px
+}
+
+.block {
+  width: 100%;
+  background: red;
+}
