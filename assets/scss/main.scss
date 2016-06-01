@@ -227,7 +227,16 @@
       background-size: cover;
       margin-bottom: 20px;
       .content {
-        margin-top: 195px;
+        margin-top: 178px;
+      }
+      h2.block-bg {
+        line-height: 1;
+      }
+      p.block-bg {
+        margin-top: 5px;
+      }
+      .sign-up-trampoline {
+        margin-top: 5px;
       }
     }
   }
@@ -240,10 +249,16 @@
       background-size: cover;
       margin-bottom: 20px;
       .content {
-        margin-top: 140px;
+        margin-top: 142px;
+      }
+      p.block-bg {
+        margin-top: 8px;
       }
       .sign-up-trampoline {
-        margin-top: 15px;
+        margin-top: 4px;
+      }
+      h1 {
+        line-height: 1.2;
       }
     }
   }
