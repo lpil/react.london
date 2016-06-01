@@ -8,3 +8,4 @@ reactlondon
 .env
 .sass-cache
 assets/css/*.css*
+assets/css/maps/main.css.map
