@@ -203,9 +203,10 @@
       flex-flow: column wrap;
       -webkit-align-items: center;
       align-items: center;
-      img {
+      img, object {
         margin-top: 5px;
         width: 18px;
+        height: 12px;
       }
     }
   }
