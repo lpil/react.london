@@ -199,9 +199,10 @@
       display: flex;
       flex-flow: column wrap;
       align-items: center;
-      img {
+      img, object {
         margin-top: 5px;
         width: 18px;
+        height: 12px;
       }
     }
   }
