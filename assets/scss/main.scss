@@ -330,6 +330,8 @@
     height: 105px;
     ul {
       @extend .reset-spacing;
+      font-weight: 700;
+      line-height: 1.7;
       li {
         list-style-type: none;
         a {
