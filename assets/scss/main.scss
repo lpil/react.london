@@ -108,6 +108,7 @@
       #mce-EMAIL {
         width: calc(100vw - 80px);
       }
+    }
   }
 
 // BULDING BLOCKS
@@ -219,7 +220,7 @@
         font-size: 21px;
         margin-top: 15px;
       }
-      h1 {
+      h1.block-bg {
         font-size: 45px;
         margin-bottom: 26px;
       }
