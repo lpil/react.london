@@ -4,6 +4,7 @@
   $grey: #4A4A4A;
 
   $desktop-width: 1200px;
+  $tablet-width: 1024px;
   $mobile-width: 435px;
   $tiny-mobile-width: 320px;
 
@@ -42,10 +43,21 @@
     text-decoration: none;
   }
 
+  object {
+    pointer-events: none;
+  }
+
 // MAILCHIMP
   #mc_embed_signup{
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
+
+    form#mc-embedded-subscribe-form {
+      padding-top: 27px !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      padding-bottom: 0 !important;
+    }
 
     #mc_embed_signup_scroll {
       display: -webkit-flex;
@@ -64,6 +76,8 @@
       margin-bottom: 10px;
       border: 3px solid $grey;
       background: white;
+      width: calc(100vw - 80px);
+      max-width: 500px;
       min-height: 36px;
       padding: 0 9px;
     }
@@ -73,20 +87,15 @@
       color: $blue;
       font-size: 16px;
       font-weight: 700;
-      padding: 0px 45px;
+      // padding: 0px 45px;
+      padding-bottom: 0px;
       line-height: 36px;
       width: auto;
       height: auto;
-      margin: 20px;
+      margin: 20px 0 0 0;
       &:hover {
         color: white;
       }
-    }
-  }
-
-  @media (min-width: $mobile-width) {
-    #mc_embed_signup form#mc-embedded-subscribe-form {
-      padding: 50px 60px 0px 60px;
     }
   }
 
@@ -99,7 +108,6 @@
       #mce-EMAIL {
         width: calc(100vw - 80px);
       }
-    }
   }
 
 // BULDING BLOCKS
@@ -147,9 +155,12 @@
       center center;
     background-size: cover;
     min-height: 330px;
+    // * {
+    //   border: 1px solid red;
+    // }
     .content {
       text-align: center;
-      margin-top: 145px;
+      margin-top: 135px;
 
       display: -webkit-flex;
       display: flex;
@@ -168,9 +179,13 @@
       // margin-top: 20px;
       font-weight: 700;
       font-size: 14px;
+      padding: 3px 10px;
     }
-    h1.block-bg {
+    h1 {
       font-size: 30px;
+      display: inline-block;
+      margin: 0px;
+      padding: 3px;
     }
     h2.block-bg {
       font-size: 40px;
@@ -178,6 +193,15 @@
     }
     a {
       color: $grey;
+    }
+    .sign-up-trampoline {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      img {
+        margin-top: 5px;
+        width: 18px;
+      }
     }
   }
 
@@ -189,16 +213,36 @@
         center center;
       background-size: cover;
       .content {
-        margin-top: 310px;
+        margin-top: 300px;
       }
       p.block-bg {
         font-size: 21px;
+        margin-top: 15px;
       }
       h1.block-bg {
         font-size: 45px;
+        margin-bottom: 26px;
       }
       h2.block-bg {
         font-size: 60px;
+        line-height: 1;
+      }
+      .sign-up-trampoline {
+        margin-top: 0px;
+      }
+    }
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $desktop-width) {
+    #hero {
+      p.block-bg {
+        margin-top: 5px;
+      }
+      h2.block-bg {
+        line-height: 1;
+      }
+      .sign-up-trampoline {
+        margin-top: 5px;
       }
     }
   }
@@ -207,11 +251,20 @@
     #hero {
       background: url("../img/SVG/ReactLondon_SaveTheDate_Web_background-03.svg")
         no-repeat
-        center top;
+        center -135px;
       background-size: cover;
       margin-bottom: 20px;
       .content {
-        margin-top: 330px;
+        margin-top: 178px;
+      }
+      h2.block-bg {
+        line-height: 1;
+      }
+      p.block-bg {
+        margin-top: 5px;
+      }
+      .sign-up-trampoline {
+        margin-top: 5px;
       }
     }
   }
@@ -220,11 +273,20 @@
     #hero {
       background: url("../img/SVG/ReactLondon_SaveTheDate_Web_background-03.svg")
         no-repeat
-        center -60px;
+        center -110px;
       background-size: cover;
       margin-bottom: 20px;
       .content {
-        margin-top: 190px;
+        margin-top: 142px;
+      }
+      p.block-bg {
+        margin-top: 8px;
+      }
+      .sign-up-trampoline {
+        margin-top: 4px;
+      }
+      h1 {
+        line-height: 1.2;
       }
     }
   }
@@ -237,9 +299,6 @@
     color: white;
     font-size: 14px;
     font-weight: 700;
-    span {
-      margin-top: -3px;
-    }
     img, object {
       height: 55px;
       margin-top: -20px;
@@ -248,7 +307,7 @@
 
 // ABOUT
   #about {
-    margin: 20px 0px 70px 0px;
+    margin: 30px 0px 50px 0px;
     h2, p {
       font-size: 30px;
     }
@@ -259,6 +318,9 @@
     p {
       line-height: 42px;
       @extend .reset-spacing;
+    }
+    p:first-of-type {
+      margin-bottom: 10px;
     }
   }
 
@@ -276,10 +338,11 @@
 // REGISTER
   #register {
     border-top: 3px solid $grey;
-    padding: 20px 0 56px 0;
+    padding: 30px 0 50px 0;
     h3 {
       font-size: 21px;
       @extend .reset-spacing;
+      text-align: center;
     }
   }
 
@@ -289,6 +352,8 @@
     height: 105px;
     ul {
       @extend .reset-spacing;
+      font-weight: 700;
+      line-height: 1.7;
       li {
         list-style-type: none;
         a {
@@ -308,6 +373,5 @@
     }
     object {
       height: 85px;
-      pointer-events: none;
     }
   }
