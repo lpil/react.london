@@ -48,8 +48,10 @@
     font: 14px Helvetica, Arial, sans-serif;
 
     #mc_embed_signup_scroll {
+      display: -webkit-flex;
       display: flex;
       flex-flow: column wrap;
+      -webkit-flex-flow: column wrap;
       align-items: center;
     }
     #mc_embed_signup_input {
@@ -95,25 +97,30 @@
         padding-top: 50px;
       }
       #mce-EMAIL {
-        width: calc(100vw - 80px); 
+        width: calc(100vw - 80px);
       }
     }
   }
 
 // BULDING BLOCKS
   #wrapper {
+    display: -webkit-flex;
     display: flex;
     min-height: 100vh;
+    -webkit-flex-direction: column;
     flex-direction: column;
   }
 
   main {
+    -webkit-flex: 1;
     flex: 1;
   }
 
   .block {
     width: 100%;
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: center;
     justify-content: center;
     .content {
       width: 980px;
@@ -122,9 +129,13 @@
   }
 
   .content.space-between {
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-align-items: center;
     align-items: center;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
   }
 
@@ -140,8 +151,11 @@
       text-align: center;
       margin-top: 145px;
 
+      display: -webkit-flex;
       display: flex;
+      -webkit-flex-flow: column wrap;
       flex-flow: column wrap;
+      -webkit-align-items: center;
       align-items: center;
     }
     .block-bg {
