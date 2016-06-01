@@ -42,6 +42,10 @@
     text-decoration: none;
   }
 
+  object {
+    pointer-events: none;
+  }
+
 // MAILCHIMP
   #mc_embed_signup{
     clear: left;
@@ -294,6 +298,5 @@
     }
     object {
       height: 85px;
-      pointer-events: none;
     }
   }
