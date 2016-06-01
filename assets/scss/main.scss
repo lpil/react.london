@@ -153,8 +153,11 @@
       font-weight: 700;
       font-size: 14px;
     }
-    h1.block-bg {
+    h1 {
       font-size: 30px;
+      display: inline-block;
+      margin: 0px;
+      padding: 3px;
     }
     h2.block-bg {
       font-size: 40px;
@@ -186,6 +189,7 @@
       }
       p.block-bg {
         font-size: 21px;
+        margin-top: 15px;
       }
       h1.block-bg {
         font-size: 45px;
@@ -193,9 +197,10 @@
       }
       h2.block-bg {
         font-size: 60px;
+        line-height: 1;
       }
       .sign-up-trampoline {
-        margin-top: 45px;
+        margin-top: 0px;
       }
     }
   }
