@@ -205,6 +205,20 @@
     }
   }
 
+  @media (min-width: $mobile-width) and (max-width: $desktop-width) {
+    #hero {
+      p.block-bg {
+        margin-top: 5px;
+      }
+      h2.block-bg {
+        line-height: 1;
+      }
+      .sign-up-trampoline {
+        margin-top: 5px;
+      }
+    }
+  }
+
   @media (max-width: $mobile-width) {
     #hero {
       background: url("../img/SVG/ReactLondon_SaveTheDate_Web_background-03.svg")
