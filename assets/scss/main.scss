@@ -4,6 +4,7 @@
   $grey: #4A4A4A;
 
   $desktop-width: 1200px;
+  $tablet-width: 1024px;
   $mobile-width: 435px;
   $tiny-mobile-width: 320px;
 
@@ -140,9 +141,12 @@
       center center;
     background-size: cover;
     min-height: 330px;
+    // * {
+    //   border: 1px solid red;
+    // }
     .content {
       text-align: center;
-      margin-top: 145px;
+      margin-top: 135px;
 
       display: flex;
       flex-flow: column wrap;
@@ -169,6 +173,15 @@
     a {
       color: $grey;
     }
+    .sign-up-trampoline {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      img {
+        margin-top: 5px;
+        width: 18px;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -179,16 +192,20 @@
         center center;
       background-size: cover;
       .content {
-        margin-top: 310px;
+        margin-top: 300px;
       }
       p.block-bg {
         font-size: 21px;
       }
       h1.block-bg {
         font-size: 45px;
+        margin-bottom: 26px;
       }
       h2.block-bg {
         font-size: 60px;
+      }
+      .sign-up-trampoline {
+        margin-top: 45px;
       }
     }
   }
@@ -197,11 +214,11 @@
     #hero {
       background: url("../img/SVG/ReactLondon_SaveTheDate_Web_background-03.svg")
         no-repeat
-        center top;
+        center -135px;
       background-size: cover;
       margin-bottom: 20px;
       .content {
-        margin-top: 330px;
+        margin-top: 195px;
       }
     }
   }
@@ -210,11 +227,14 @@
     #hero {
       background: url("../img/SVG/ReactLondon_SaveTheDate_Web_background-03.svg")
         no-repeat
-        center -60px;
+        center -110px;
       background-size: cover;
       margin-bottom: 20px;
       .content {
-        margin-top: 190px;
+        margin-top: 140px;
+      }
+      .sign-up-trampoline {
+        margin-top: 15px;
       }
     }
   }
