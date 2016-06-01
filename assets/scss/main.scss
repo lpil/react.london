@@ -64,6 +64,7 @@
       display: flex;
       flex-flow: column wrap;
       -webkit-flex-flow: column wrap;
+      -webkit-align-items: center;
       align-items: center;
     }
     #mc_embed_signup_input {
@@ -196,8 +197,11 @@
       color: $grey;
     }
     .sign-up-trampoline {
+      display: -webkit-flex;
       display: flex;
+      -webkit-flex-flow: column wrap;
       flex-flow: column wrap;
+      -webkit-align-items: center;
       align-items: center;
       img {
         margin-top: 5px;
