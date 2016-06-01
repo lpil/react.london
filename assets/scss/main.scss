@@ -300,6 +300,9 @@
       line-height: 42px;
       @extend .reset-spacing;
     }
+    p:first-of-type {
+      margin-bottom: 10px;
+    }
   }
 
   @media (max-width: $mobile-width) {
