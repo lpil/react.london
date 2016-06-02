@@ -7,3 +7,9 @@ test:
   override:
     - npm test
     - npm run test-server
+
+deployment:
+  live:
+    branch: release
+    heroku:
+      appname: admin-react-london
