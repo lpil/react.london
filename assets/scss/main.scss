@@ -106,7 +106,7 @@
       
       border: 0px;
       border-radius: 5px;
-      
+
       cursor: pointer;
       &:hover {
         color: white;
@@ -174,9 +174,6 @@
       center center;
     background-size: cover;
     min-height: 330px;
-    // * {
-    //   border: 1px solid red;
-    // }
     .content {
       text-align: center;
       margin-top: 135px;
@@ -195,7 +192,6 @@
       padding: 3px;
     }
     p.block-bg {
-      // margin-top: 20px;
       font-weight: 700;
       font-size: 14px;
       padding: 3px 10px;
@@ -276,7 +272,7 @@
         no-repeat
         center -135px;
       background-size: cover;
-      margin-bottom: 20px;
+      padding-bottom: 20px;
       .content {
         margin-top: 178px;
       }
@@ -298,7 +294,6 @@
         no-repeat
         center -110px;
       background-size: cover;
-      margin-bottom: 20px;
       .content {
         margin-top: 142px;
       }
