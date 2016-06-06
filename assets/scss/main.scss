@@ -92,14 +92,22 @@
     input[type="submit"].button {
       background: $grey;
       color: $blue;
+
       font-size: 16px;
       font-weight: 700;
-      // padding: 0px 45px;
-      padding-bottom: 0px;
       line-height: 36px;
-      width: auto;
-      height: auto;
+      
       margin: 20px 0 0 0;
+      padding-bottom: 0px;
+
+      width: auto;
+      min-width: 90px;
+      height: auto;
+      
+      border: 0px;
+      border-radius: 5px;
+      
+      cursor: pointer;
       &:hover {
         color: white;
       }
