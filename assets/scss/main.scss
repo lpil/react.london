@@ -50,7 +50,8 @@
 // MAILCHIMP
   #mc_embed_signup{
     clear: left;
-    font: 14px Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-family: 'Objektiv', Arial;
 
     form#mc-embedded-subscribe-form {
       padding-top: 27px !important;
@@ -76,6 +77,8 @@
     label[for='mce-EMAIL'] {
       width: calc(100vw - 80px);
       max-width: 518px;
+      font-size: 19px;
+      font-weight: 700;
     }
 
     #mce-EMAIL {
